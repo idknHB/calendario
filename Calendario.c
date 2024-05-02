@@ -31,9 +31,6 @@ int calcularDiaSemana(int mes) {
   for (int i = 0; i < mes; i++) {
     totalDias += mesDias[i];
   }
-  // Considerar o ano bissexto, se aplicável
-  if (mes > 1 && anoBi)
-    totalDias++;
   // Adicionar o deslocamento do dia da semana inicial
   return (diaSemanaI + totalDias) % 7;
 }
